@@ -3,6 +3,9 @@ body{
     margin:0px;
     height:100vh;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* header */
 
