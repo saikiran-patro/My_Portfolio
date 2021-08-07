@@ -5,6 +5,7 @@ body{
 }
 html {
   scroll-behavior: smooth;
+  
 }
 
 /* header */
@@ -42,7 +43,7 @@ html {
     transition: color 1s;
 }
 .ytlink{
-    color: #343A40 !important;
+    color: white !important;
     font-weight:bolder;
     font-size: medium;
     transition: color 1s;
@@ -50,28 +51,24 @@ html {
 .clickable:hover{
  color: #1687A7 !important;
 }
-.ytlink:hover{
-    color:white !important;
-}
-.ytbtn:hover{
-    background-color:#343A40;
-    
-}
+
 .ytbtn{
     margin-right: 10px;
     Width:130px;
+    color:white !important;
     border: 2px solid black !important;
-    background-color:white;
+    background-color:#343A40;
     border-radius:10px;
     transition: all 0.3s ease-out;
 }
 .litems{
-    margin-left: 40px;
-    margin-right:40px
+    margin-left: 10px;
+    margin-right:50px
 }
 
 #headbar{
     background-color:white;
+    
 }
 
 .gradient-color{
@@ -182,9 +179,49 @@ html {
     box-shadow: 0px -1px 10px 2px #393e46; 
 }
 
+/* certifications */
+.certifi-container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom:50px;
+   
+    
+}
+.certifi-container .card-holder{
+    position: relative;
+    width:320px;
+    height:330px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),inset -5px -5px 5px rgba(255,255,255,0.5),5px 5px 5px rgba(0,0,0,0.05),-5px -5px 5px rgba(255,255,255,0.5);
+    border-radius:15px;
+    background-color: #F4F9F9;
+    margin: 25px;
+}
+.certifi-container .card-holder .box{
 
+    position: absolute;
+    top:20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    border-radius:15px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    transition:0.5s;
+    background-color: #D3E0EA;
+    font-family: 'Fredoka One', cursive;
+}
 
-
+.certifi-container .card-holder:hover .box{
+    background:linear-gradient(45deg,#A7BBC7,#EDEEF7,#E1E5EA,#A7BBC7);
+    transform:translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
 
 
 /* contact */
